@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nokori サポート</title>
+<meta name="description" content="Nokori(冷蔵庫から今夜の献立)の問い合わせ先と、よくある質問。">
+<style>
+/* Nokori のお知らせページ(担当A、2026-09-28)。アプリと同じ配色にそろえている */
+:root {
+  --bg: #f5f5f7;
+  --card: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6b6b70;
+  --accent: #ff6a13;
+  --accent-deep: #d8500a;
+  --tint: #fff0e6;
+  --line: #e5e5ea;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+}
+header {
+  background: var(--accent);
+  color: #fff;
+  padding: 40px 16px 32px;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+header .wrap { padding: 0 16px; }
+header h1 { margin: 0 0 6px; font-size: 28px; letter-spacing: 0.02em; }
+header p { margin: 0; opacity: 0.92; font-size: 15px; }
+nav { background: var(--card); border-bottom: 1px solid var(--line); }
+nav .wrap { display: flex; gap: 20px; padding-top: 12px; padding-bottom: 12px; }
+nav a { color: var(--accent-deep); text-decoration: none; font-weight: 700; font-size: 15px; }
+nav a[aria-current="page"] { color: var(--text); }
+main { padding: 28px 0 64px; }
+section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 20px 24px;
+  margin-bottom: 16px;
+}
+h2 { font-size: 19px; margin: 0 0 12px; }
+h3 { font-size: 16px; margin: 20px 0 6px; }
+p, li { font-size: 15px; }
+ul { padding-left: 1.2em; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 14px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--tint); font-weight: 700; }
+.note {
+  background: var(--tint);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  padding: 12px 14px;
+  margin: 14px 0;
+  font-size: 14px;
+}
+.todo { background: #fff6d6; border-left-color: #c79100; }
+footer { color: var(--muted); font-size: 13px; padding: 0 0 48px; }
+a { color: var(--accent-deep); }
+@media (max-width: 480px) {
+  header { padding: 28px 16px 24px; }
+  header h1 { font-size: 23px; }
+  section { padding: 16px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Nokori サポート</h1>
+    <p>冷蔵庫の残りから、今夜の主菜と副菜を決めるアプリ</p>
+  </div>
+</header>
+<nav><div class="wrap">
+  <a href="./" aria-current="page">サポート</a>
+  <a href="./privacy.html">プライバシーポリシー</a>
+</div></nav>
+
+<main class="wrap">
+
+<section>
+  <h2>問い合わせ先</h2>
+  <div class="note todo">
+    <strong>※ ここは公開前に差し替えてください。</strong><br>
+    メールアドレス、または問い合わせフォームのURLを入れます。
+    ストアの審査では、<strong>実際に連絡がつくこと</strong>が見られます。
+  </div>
+  <p>ご意見・不具合のご報告は、次の宛先へお送りください。</p>
+  <p><strong>メール:</strong> <code>（未設定）</code></p>
+  <p>不具合のご報告では、次を教えていただけると助かります。</p>
+  <ul>
+    <li>お使いの端末（例: iPhone 15 / Android 14）</li>
+    <li>どの画面で、何をしたときに起きたか</li>
+    <li>アプリの版（メニュー &gt; いちばん下に出ています）</li>
+  </ul>
+</section>
+
+<section>
+  <h2>よくある質問</h2>
+
+  <h3>レシピの分量や手順は、確かめられていますか</h3>
+  <p>
+    <strong>一部だけです。</strong> 出どころ（農林水産省の公開情報）を確かめたレシピには、
+    料理ごとに出典を載せています。それ以外は<strong>AIが書いた下書き</strong>で、
+    画面に「未確認の下書き」と表示しています。
+    下書きのレシピは、分量と手順を人が確かめていません。
+    <strong>火の通りと味をご自身で見ながら</strong>作ってください。
+  </p>
+
+  <h3>カロリーや栄養の数値は出ますか</h3>
+  <p>
+    <strong>出ません。</strong> 計算していないので、出せません。
+    表示しているのは「たんぱく質と野菜が入っているか」という<strong>食材の種類の目安</strong>までです。
+    健康や食事療法の判断には使わないでください。
+  </p>
+
+  <h3>食材の日持ちは、自動で分かりますか</h3>
+  <p>
+    <strong>分かりません。</strong> 食材ごとの日持ちを、このアプリが勝手に決めることはしていません。
+    期限は<strong>ご自身で入れたぶんだけ</strong>使われます。
+    入れていない食材について「まだ大丈夫」と判断することもありません。
+  </p>
+
+  <h3>機種を変えたら、データは引き継げますか</h3>
+  <p>
+    <strong>いまは引き継げません。</strong> データはお使いの端末の中だけに保存されています。
+    書き出し（バックアップ）はできますが、<strong>読み込みは準備中</strong>です。
+    できるようになりましたら、このページでお知らせします。
+  </p>
+
+  <h3>アカウントは必要ですか</h3>
+  <p>必要ありません。登録も、ログインもありません。</p>
+
+  <h3>料理の写真は出ますか</h3>
+  <p>写真はありません。イラストを出しています。</p>
+</section>
+
+<section>
+  <h2>このアプリが「しないこと」</h2>
+  <p>あとでがっかりしないように、先にお伝えします。</p>
+  <ul>
+    <li>栄養の数値は計算しません</li>
+    <li>食材の日持ちを勝手に決めません</li>
+    <li>確かめていないレシピを、確かめたように見せません</li>
+    <li>入力した内容を外部へ送りません（広告・アクセス解析も入れていません）</li>
+    <li>「かんたん」「フライパン1つ」などの条件は、判定の基準を用意できていないため出していません</li>
+  </ul>
+  <p>できるようになったら、そのときにお知らせします。</p>
+</section>
+
+<footer class="wrap">
+  <p>最終更新: 2026-09-28</p>
+</footer>
+</main>
+</body>
+</html>
