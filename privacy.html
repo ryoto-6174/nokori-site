@@ -76,7 +76,7 @@ a { color: var(--accent-deep); }
 <header>
   <div class="wrap">
     <h1>プライバシーポリシー</h1>
-    <p>Nokori（iOS / Android）　最終更新: 2026-09-28</p>
+    <p>Nokori（iOS / Android）　最終更新: 2026-10-06</p>
   </div>
 </header>
 <nav><div class="wrap">
@@ -98,6 +98,11 @@ a { color: var(--accent-deep); }
     <li>作る予定、お気に入り、料理への反応、レシピのメモ、買い物と食費の記録</li>
   </ul>
   <p>これらは<strong>外部へ送っていません</strong>。開発者も見られません。</p>
+  <div class="note">
+    ただし、<strong>広告を出すために、端末の情報が広告の配信元（Google）に伝わります</strong>（4章）。
+    「個人に合わせない広告」でも、<strong>通信そのものが無くなるわけではありません</strong>。
+    上に挙げた<strong>食材メモ・記録・買い物リストの中身は、そこに含まれません</strong>。
+  </div>
 </section>
 
 <section>
@@ -125,8 +130,45 @@ a { color: var(--accent-deep); }
 
 <section>
   <h2>4. 広告・分析</h2>
-  <p><strong>広告は出していません。分析（アクセス解析）のツールも入れていません。</strong></p>
-  <p>どの画面を見たか、何を作ったかといった情報を、外部に送る仕組みはありません。</p>
+  <p><strong>分析（アクセス解析）のツールは入れていません。</strong>
+  どの画面を見たか、何を作ったかを、こちらが集める仕組みはありません。</p>
+
+  <h3>広告について</h3>
+  <p>
+    <strong>広告を出しています。</strong>
+    「きろく」の画面のいちばん下に、<strong>帯の広告が1か所</strong>出ます。配信は Google（AdMob）です。
+    <strong>作った料理の記録が3件を超えてから</strong>出ます。Web の版では出ません。
+  </p>
+  <ul>
+    <li><strong>個人に合わせない広告だけ</strong>を頼んでいます。あなたの閲覧や購入の履歴にもとづいた広告は出ません</li>
+    <li>iOS の<strong>追跡の許可は求めません</strong>。アプリをまたいで追いかけることはしません</li>
+    <li>広告を出すために、<strong>端末の種類・おおまかな地域（IPアドレスから）・広告の識別子</strong>などが
+      Google に伝わります。<strong>これは広告を出す以上、避けられません</strong></li>
+    <li><strong>食材メモ・調理の記録・買い物リストの中身は、広告に一切使われません。</strong>
+      これらが Google に渡ることはありません</li>
+    <li>全画面の広告・動画の広告・画面を開いた直後の割り込みは<strong>使いません</strong></li>
+    <li>Google のポリシー:
+      <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></li>
+  </ul>
+  <div class="note">
+    <strong>いまの状態:</strong> 広告のIDは <strong>Google のテスト用のまま</strong>です。
+    本物の広告は出ず、こちらにお金も入りません。本番のIDに変えるときは、この文を直します。
+  </div>
+
+  <h3>レシートの読み取りについて</h3>
+  <p>
+    レシートの写真から文字を読む機能は、<strong>端末の中だけで</strong>読みます（Google の ML Kit）。
+  </p>
+  <ul>
+    <li><strong>写真そのものは、どこへも送りません。</strong> 読み取った文字も送りません</li>
+    <li>文字を読むためのデータ（モデル）は<strong>アプリに入っています</strong>。使うときに取りに行きません</li>
+    <li>ただし、<strong>ML Kit は「機能の使われ方や速さの情報」を Google へ送る</strong>と規約に書かれています
+      （どの画面を見たか・何を読み取ったかではなく、部品の動作に関する情報です）。
+      <strong>これを止める方法は、公開されている資料には書かれていません</strong></li>
+    <li>そのため、<strong>「レシートの読み取りでは一切通信しません」とは書きません。</strong>
+      写真が送られないことと、部品が動作の情報を送ることは、別のことです</li>
+    <li>出典: <a href="https://developers.google.com/ml-kit/terms">https://developers.google.com/ml-kit/terms</a></li>
+  </ul>
 </section>
 
 <section>
@@ -144,11 +186,14 @@ a { color: var(--accent-deep); }
   <ul>
     <li>データは端末の中に保存されます。<strong>アプリを削除すると消えます</strong></li>
     <li>アプリの中からも、初期化（すべて消す）ができます</li>
-    <li>端末を変えるときは、バックアップの書き出しをお使いください</li>
+    <li>端末を変えるときは、メニューの「<strong>端末の引き継ぎ（バックアップ）</strong>」から、
+      控えを書き出して新しい端末で読み込んでください。読み込みは<strong>置き換え</strong>で、
+      <strong>確かめてから実行</strong>します</li>
   </ul>
   <div class="note">
-    <strong>注意:</strong> バックアップの<strong>読み込み</strong>は、いま作っているところです。
-    現時点では、端末を変えるとデータは引き継げません。
+    <strong>控えに入らないもの:</strong> 献立の条件・期限の履歴・家族構成・案内の既読・
+    買い物の記録と食費・食材メモの見た目の設定・ペットの名前やへや・「広告を消す」を買ったかどうか。
+    <strong>「全データの引き継ぎ」ではありません。</strong>
   </div>
 </section>
 
@@ -180,7 +225,7 @@ a { color: var(--accent-deep); }
 </section>
 
 <footer class="wrap">
-  <p>Nokori　最終更新: 2026-09-28</p>
+  <p>Nokori　最終更新: 2026-10-06</p>
 </footer>
 </main>
 </body>
